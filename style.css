@@ -1,0 +1,332 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navigation Bar Styles */
+nav {
+  background-color: #333;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+align-items: center;
+margin: 0;
+padding: 0;
+}
+
+nav ul li a {
+color: #fff;
+text-decoration: none;
+font-size: 18px;
+padding: 10px;
+transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+background-color: #fff;
+color: #333;
+}
+
+/* Header Styles */
+header {
+background-image: url(header-bg.jpg);
+background-size: cover;
+background-position: center;
+height: 400px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+color: #fff;
+}
+
+header h1 {
+font-size: 48px;
+margin: 0;
+padding: 0;
+}
+
+header p {
+font-size: 24px;
+margin: 20px 0;
+padding: 0;
+}
+
+/* About Section Styles */
+#about {
+background-color: #f2f2f2;
+padding: 40px 0;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#about .avatar {
+width: 200px;
+height: 200px;
+border-radius: 50%;
+overflow: hidden;
+margin-right: 40px;
+}
+
+#about .avatar img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+#about p {
+font-size: 20px;
+line-height: 1.5;
+margin: 0;
+}
+
+/* Project Section Styles */
+#projects {
+padding: 40px 0;
+}
+
+.project-grid {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.project-item {
+width: 300px;
+margin: 20px;
+border-radius: 10px;
+overflow: hidden;
+}
+
+.project-item img {
+width: 100%;
+height: 200px;
+object-fit: cover;
+}
+
+.project-item h3 {
+font-size: 24px;
+margin: 20px;
+}
+
+/* Reviews Section Styles */
+#reviews {
+background-color: #f2f2f2;
+padding: 40px 0;
+}
+
+.review-grid {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.review-item {
+width: 300px;
+margin: 20px;
+border-radius: 10px;
+overflow: hidden;
+text-align: center;
+}
+
+.review-item img {
+width: 100px;
+height: 100px;
+border-radius: 50%;
+margin: 20px;
+}
+
+.review-item p {
+font-size: 18px;
+margin: 20px;
+}
+
+.review-item h4 {
+font-size: 20px;
+margin: 0;
+padding: 0;
+}
+
+/* Contact Section Styles */
+#contact {
+padding: 40px 0;
+}
+
+#contact form {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+#contact label {
+font-size: 20px;
+margin: 20px;
+}
+
+#contact input,
+#contact textarea {
+width: 100%;
+padding: 10px;
+font-size: 18px;
+margin: 10px 0;
+border-radius: 5px;
+border: none;
+}
+
+#contact button {
+padding: 10px 20px;
+font-size: 20
+px;
+background-color: #333;
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: all 0.3s ease-in-out;
+}
+
+#contact button:hover {
+background-color: #fff;
+color: #333;
+}
+
+/* Pricing Section Styles */
+#pricing {
+padding: 40px 0;
+}
+
+.pricing-grid {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.pricing-item {
+width: 300px;
+margin: 20px;
+border-radius: 10px;
+overflow: hidden;
+text-align: center;
+}
+
+.pricing-item h3 {
+font-size: 24px;
+margin: 20px;
+}
+
+.pricing-item ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.pricing-item li {
+font-size: 18px;
+margin: 10px 0;
+}
+
+.pricing-item .price {
+font-size: 36px;
+margin: 20px;
+}
+
+.pricing-item button {
+padding: 10px 20px;
+font-size: 20px;
+background-color: #333;
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: all 0.3s ease-in-out;
+}
+
+.pricing-item button:hover {
+background-color: #fff;
+color: #333;
+}
+
+/* Footer Styles */
+footer {
+background-color: #333;
+color: #fff;
+padding: 40px 0;
+text-align: center;
+}
+
+footer p {
+margin: 0;
+padding: 0;
+}
+
+footer a {
+color: #fff;
+text-decoration: none;
+transition: all 0.3s ease-in-out;
+}
+
+footer a:hover {
+color: #f2f2f2;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+header {
+height: 300px;
+}
+
+header h1 {
+font-size: 36px;
+}
+
+header p {
+font-size: 18px;
+}
+
+#about {
+flex-direction: column;
+text-align: center;
+}
+
+#about .avatar {
+margin: 0 auto 20px auto;
+}
+
+.project-grid {
+justify-content: space-around;
+}
+
+.project-item {
+margin: 20px 0;
+}
+
+.review-grid {
+justify-content: space-around;
+}
+
+.review-item {
+margin: 20px 0;
+}
+
+.pricing-grid {
+justify-content: space-around;
+}
+
+.pricing-item {
+margin: 20px 0;
+}
+}
