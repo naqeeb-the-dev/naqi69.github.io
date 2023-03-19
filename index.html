@@ -1,154 +1,298 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Naqeeb Abid</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Navigation Bar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      padding: 10px;
+      color: white;
+    }
+    
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    /* About Section */
+    .about {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 50px 0;
+      background-color: #f7f7f7;
+    }
+#contact {
+padding: 40px 0;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+#contact form {
+
+}
+
+#contact label {
+font-size: 20px;
+margin: 20px;
+}
+
+
+    .avatar {
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      background-image: url(https://scontent.fisb30-1.fna.fbcdn.net/v/t39.30808-6/300305336_391520379827593_3685280521199383357_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeF-Czg6E_tEcg57kcbuYW3F-3lZOsjJsEr7eVk6yMmwSnxXRus65ZTJaR1JWf4rpZ2CtbltfyTISKwDzAIxd_v1&_nc_ohc=1kNW18v-FqQAX8RQ4-r&_nc_ht=scontent.fisb30-1.fna&oh=00_AfBbT0wnUkp6VX9e9kKS5aiGrxkrzm4LGLbyPv5WNJpgjw&oe=641D02F6);
+      background-size: cover;
+      margin-bottom: 20px;
+    }
+
+    /* Projects Section */
+    .projects {
+      overflow-x: scroll;
+      white-space: nowrap;
+      padding: 50px 0;
+      background-color: #e6e6e6;
+    }
+
+    .project {
+      display: inline-block;
+      margin: 0 20px;
+      max-width: 400px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .project iframe {
+      width: 100%;
+      height: 250px;
+    }
+
+    /* Pricing Section */
+    .pricing {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 50px 0;
+      background-color: #f7f7f7;
+    }
+
+    .pricing-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px;
+      max-width: 300px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      background-color: white;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .pricing-card:hover {
+      transform: scale(1.05);
+    }
+
+    .pricing-card h2 {
+      margin: 20px;
+    }
+
+    .pricing-card ul {
+      margin: 20px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .pricing-card li {
+      margin-bottom: 10px;
+    }
+
+    .pricing-card a {
+      display: block;
+      margin: 20px;
+      padding: 10px;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .pricing-card a:hover {
+      background-color: #444;
+    }
+
+    @media screen and (max-width: 768px) {
+      .projects {
+        overflow-x: auto;
+      }
+      .project {
+        margin: 0 10px;
+      }
+      .pricing {
+        flex-direction: column;
+        align-items: center;
+      }
+      .pricing-card {
+        margin: 20px 0;
+      }
+    }
+</style>
 </head>
 <body>
   <!-- Navigation Bar -->
   <nav>
-    <ul>
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#past-projects">Past Projects</a></li>
-      <li><a href="#current-projects">Current Projects</a></li>
-      <li><a href="#reviews">Reviews</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#pricing">Pricing</a></li>
-    </ul>
+    <h1>Naqeeb Abid</h1>
+    <div>
+      <a href="#projects">Projects</a>
+      <a href="#pricing">Pricing</a>
+	<a href="#contact">Contact</a>
+    </div>
   </nav>
+  <!-- About Section -->
+  <section class="about">
+    <div class="avatar"></div>
+    <h1>About Me</h1>
+    <p>Hi there, I'm Naqeeb Abid, a skilled Flutter developer with a strong passion for creating captivating and user-friendly mobile applications. Over the course of a few months, I've gained quite an experience in developing efficient and elegant applications.</p>
 
-  <!-- About Me -->
-  <section id="about">
-    <div class="container">
-      <img src="avatar.jpg" alt="Avatar">
-      <h1>Naqeeb Abid</h1>
-      <p>Hi, I'm a full-stack developer with 5 years of experience in building Mobile applications. I specialize in Flutter, Firebase, SQL, and MongoDB.</p>
+<p>My attention to detail and eye for design enable me to deliver high-quality apps that not only meet but exceed expectations. I have an in-depth understanding of Flutter's capabilities and keep up-to-date with the latest trends and technologies in the field to ensure that my work is always cutting-edge.</p>
+
+<p>I take pride in my ability to collaborate with clients to understand their unique needs and create custom solutions that meet those needs. My proven track record of success in the industry makes me the ideal choice for your next Flutter development project.</p>
+
+<p>Let's work together to bring your vision to life and create an app that stands out in the crowded marketplace.</p>
+  </section>
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <div class="project">
+      <iframe src="https://www.youtube.com/embed/JRhnlDZn8To"></iframe>
+      <h2>BMI CALCULATOR</h2>
+      <p>A BMI calculator app made with flutter. 
+The user enters their information and the app 
+displays their BMI. It also informs them about
+ what their index means</p>
+    </div>
+    <div class="project">
+      <iframe src="https://www.youtube.com/embed/_9Xen6KANok"></iframe>
+      <h2>WEATHER UPDATE</h2>
+      <p>A weather tracking app which allows users to get instant weather updates. Built with flutter using Openweather API's</p>
+    </div>
+    <div class="project">
+      <iframe src="https://www.youtube.com/embed/b5k4gtQJo5A"></iframe>
+      <h2>DEV WHISPERS</h2>
+      <p>A group chat application built using flutter with firebase as backend</p>
+    </div>
+    <div class="project">
+      <iframe src="https://www.youtube.com/embed/QOPYzQe0CUk"></iframe>
+      <h2>STEGO</h2>
+      <p>An application designed using flutter to practice OTP verification, login, signup etc.</p>
+    </div>
+<div class="project">
+      <iframe src="https://www.youtube.com/embed/qPUJrzwcVWc"></iframe>
+      <h2>Car Rental</h2>
+      <p>A website designed using JSP, the UI was provided by client. SQL connectivity, database creation and management and the remaining website logic was implemented by me</p>
     </div>
   </section>
-
-  <!-- Past Projects -->
-  <section id="past-projects">
-    <div class="container">
-      <h2>Past Projects</h2>
-      <div class="project-grid">
-        <div class="project-item">
-          <img src="project1.jpg" alt="Project 1">
-          <h3>Project 1</h3>
-        </div>
-        <div class="project-item">
-          <img src="project2.jpg" alt="Project 2">
-          <h3>Project 2</h3>
-        </div>
-        <div class="project-item">
-          <img src="project3.jpg" alt="Project 3">
-          <h3>Project 3</h3>
-        </div>
-        <div class="project-item">
-          <img src="project4.jpg" alt="Project 4">
-          <h3>Project 4</h3>
-        </div>
-      </div>
+  <!-- Pricing Section -->
+  <section class="pricing" id="pricing">
+    <div class="pricing-card">
+      <h2>Basic</h2>
+      <ul>
+	<h3>$100</h3>
+        <li>5 pages</li>
+        <li>Firebase Backend</li>
+        <li>1 Revision</li>
+        <li>100% Satisfaction</li>
+      </ul>
+     
+    </div>
+    <div class="pricing-card">
+      <h2>Pro</h2>
+      <ul>
+        <h3>$250</h3>
+        <li>upto 10 pages</li>
+        <li>Animations</li>
+        <li>Multiple API integrations</li>
+	<li>2 Revisions</li>
+        <li>100% Satisfaction</li>
+      </ul>
+      
+    </div>
+    <div class="pricing-card" >
+      <h2>Premium</h2>
+      <ul>
+        <h3>$400</h3>
+        <li>Fully Customised UI</li>
+        <li>SQL, MongoDB</li>
+        <li>Multiple API integration</li>
+        <li>Beautiful and complex animations</li>
+        <li>Multiple Revisions</li>
+	<li>100% satisfaction</li>
+      </ul>
+      
     </div>
   </section>
-
-  <!-- Current Projects -->
-  <section id="current-projects">
-    <div class="container">
-      <h2>Current Projects</h2>
-      <div class="project-grid">
-        <div class="project-item">
-          <img src="project5.jpg" alt="Project 5">
-          <h3>Project 5</h3>
-        </div>
-        <div class="project-item">
-          <img src="project6.jpg" alt="Project 6">
-          <h3>Project 6</h3>
-        </div>
-        <div class="project-item">
-          <img src="project7.jpg" alt="Project 7">
-          <h3>Project 7</h3>
-        </div>
-        <div class="project-item">
-          <img src="project8.jpg" alt="Project 8">
-          <h3>Project 8</h3>
-        </div>
-      </div>
-    </div
-</section>
-  <!-- Reviews -->
-  <section id="reviews">
-    <div class="container">
-      <h2>User Reviews</h2>
-      <div class="review-grid">
-        <div class="review-item">
-          <img src="avatar1.jpg" alt="User 1">
-          <p>"Naqeeb is an amazing developer. He is very professional and always delivers high-quality work."</p>
-          <h4>User 1</h4>
-        </div>
-        <div class="review-item">
-          <img src="avatar2.jpg" alt="User 2">
-          <p>"I hired Naqeeb for a complex project and he exceeded my expectations. His attention to detail and problem-solving skills are unmatched."</p>
-          <h4>User 2</h4>
-        </div>
-        <div class="review-item">
-          <img src="avatar3.jpg" alt="User 3">
-          <p>"Working with Naqeeb was a pleasure. He is very easy to communicate with and always kept me updated on the progress of the project."</p>
-          <h4>User 3</h4>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Contact -->
-  <section id="contact">
+<!-- Contact -->
+  <section class="contact" id="contact">
     <div class="container">
       <h2>Contact Me</h2>
-      <form action="submit-form.php" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-        <button type="submit">Send</button>
-      </form>
+      <h3>Email</h3>
+	<p>naqeeb.abid1234@gmail.com</p>
+	<h3>Phone</h3>
+	<p>+92-317-5601108</p>
     </div>
   </section>
-  <!-- Pricing -->
-  <section id="pricing">
-    <div class="container">
-      <h2>Pricing</h2>
-      <div class="pricing-grid">
-        <div class="pricing-item">
-          <h3>Basic</h3>
-          <ul>
-            <li>1 project</li>
-            <li>Up to 10 pages</li>
-            <li>Basic support</li>
-          </ul>
-          <p class="price">$100</p>
-        </div>
-        <div class="pricing-item">
-          <h3>Standard</h3>
-          <ul>
-            <li>3 projects</li>
-            <li>Up to 30 pages</li>
-            <li>Priority support</li>
-          </ul>
-          <p class="price">$200</p>
-        </div>
-        <div class="pricing-item">
-          <h3>Premium</h3>
-          <ul>
-            <li>Unlimited projects</li>
-            <li>Up to 100 pages</li>
-            <li>Premium support</li>
-          </ul>
-          <p class="price">$300</p>
-        </div>
-      </div>
-    </div>
-  </section>
+  <script>
+    const projectsSection = document.querySelector('.projects');
+    const projectItems = projectsSection.querySelectorAll('.project');
+    let isDragging = false;
+    let startPos = 0;
+    let currentTranslate = 0;
+    let prevTranslate = 0;
+    let animationID = 0;
+
+    projectItems.forEach(item => {
+      item.addEventListener('mousedown', dragStart);
+      item.addEventListener('mouseup', dragEnd);
+item.addEventListener('mouseleave', dragEnd);
+item.addEventListener('mousemove', drag);
+});
+function dragStart(event) {
+  startPos = event.clientX;
+  isDragging = true;
+  animationID = requestAnimationFrame(animation);
+  projectsSection.classList.add('grabbing');
+}
+
+function drag(event) {
+  if (isDragging) {
+    const currentPosition = event.clientX;
+    currentTranslate = prevTranslate + currentPosition - startPos;
+  }
+}
+
+function dragEnd() {
+  isDragging = false;
+  cancelAnimationFrame(animationID);
+  prevTranslate = currentTranslate;
+  projectsSection.classList.remove('grabbing');
+}
+
+function animation() {
+  projectsSection.style.transform = `translateX(${currentTranslate}px)`;
+  if (isDragging === false) {
+    currentTranslate = prevTranslate;
+  }
+  requestAnimationFrame(animation);
+}
+</script>
 </body>
 </html>
